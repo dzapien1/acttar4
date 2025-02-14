@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <label>Username:</label>
+        <input type="text" placeholder="Enter your username">
+        <br>
+        <label>Password:</label>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button class="toggle-password" onclick="togglePassword()">👁</button>
+        </div>
+        <button>Login</button>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+        }
+    </script>
+</body>
+</html>
